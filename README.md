@@ -1,5 +1,9 @@
 # LDAPSentinel
 
+![LDAPSentinel Logo](C:\Users\Snapp\Desktop\Github\LDAPSentinel\image\DALL·E%202025-01-11%2005.58.03%20-%20A%20futuristic,%20cyber-themed%20image%20depicting%20a%20digital%20sentinel%20guardian%20standing%20watch%20over%20a%20networked%20gate,%20symbolizing%20security%20and%20vigilance.%20The%20s.webp) 
+
+
+
 ## Repository Structure
 
 ```plaintext
