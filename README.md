@@ -1,4 +1,3 @@
-
 # LDAPSentinel
 
 # LDAPSentinel Repository Structure and README
@@ -23,7 +22,6 @@ LDAPSentinel/
 ├── tests/
 │   ├── basic.test
 │   └── sample_ldap_traffic.pcap
-
 ```
 
 ## README
@@ -60,7 +58,9 @@ This project is tailored for users running Zeek versions **below 6.1**, as these
    
    ```bash
    git clone https://github.com/yourusername/LDAPSentinel.git
-   cd LDAPSentinel
+   mkdir /opt/zeek/share/zeek/site/LDAPSentinel
+   cd LDAPSentinel/scripts
+   cp -r . /opt/zeek/share/zeek/site/LDAPSentinel
    ```
 
 3. **Load the Script**
@@ -87,4 +87,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Changelog
 
 All changes to this project are documented in the [CHANGELOG.md](CHANGELOG.md) file.
-
