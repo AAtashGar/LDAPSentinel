@@ -33,7 +33,7 @@ jobs:
 
     # Optionally, you can upload test results to GitHub if you use a testing framework
     - name: Upload test results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: test-results
         path: path/to/test/results
