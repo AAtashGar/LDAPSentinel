@@ -1,0 +1,3 @@
+{"ts":1736113502.166532,"note":"LDAPDetection::Suspicious_LDAP_Activity","msg":"Suspicious LDAP query detected: (&(objectCategory=computer)(objectClass=computer))","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1736113532.512622,"note":"LDAPDetection::Suspicious_LDAP_Activity","msg":"Suspicious LDAP query detected: (&(sAMAccountName=*)(objectCategory=user))","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}
+{"ts":1736113554.944964,"note":"LDAPDetection::Suspicious_LDAP_Activity","msg":"Suspicious LDAP query detected: (&(&(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))(servicePrincipalName=*))","actions":["Notice::ACTION_LOG"],"email_dest":[],"suppress_for":3600.0}

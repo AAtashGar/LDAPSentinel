@@ -1,0 +1,26 @@
+{
+    "id": "ldap-sentinel",
+    "name": "LDAPSentinel",
+    "version": "0.1.0",
+    "author": "Ali AtashGar",
+    "description": "A tool for detecting suspicious and malicious queries in LDAP traffic, designed to identify attack and APT group activities.",
+    "license": "MIT",
+    "dependencies": [
+        {
+            "name": "spicy-ldap",
+            "version": ">=1.0.0"
+        }
+    ],
+    "scripts": [
+        "scripts/ldap-sentinel.zeek"
+    ],
+    "categories": [
+        "Detection",
+        "Security",
+        "Network Monitoring"
+    ],
+    "platforms": [
+        "unix",
+        "linux"
+    ]
+}
