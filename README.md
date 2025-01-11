@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # LDAPSentinel
-=======
+
 # LDAPSentinel Repository Structure and README
 
 ## Repository Structure
@@ -93,4 +93,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Changelog
 
 All changes to this project are documented in the [CHANGELOG.md](CHANGELOG.md) file.
->>>>>>> 29e751c (Initial commit)
+
