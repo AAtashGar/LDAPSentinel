@@ -76,7 +76,7 @@ This project is tailored for users running Zeek versions **below 6.1**, as these
 
 ## Proof of Concept (PoC)
 
-![alt text](C:\Users\Snapp\Desktop\Github\LDAPSentinel\image\Screenshot%202025-01-11%20052728.png)
+![alt text](https://github.com/AliAtashGar7/LDAPSentinel/blob/main/image/POC.png)
 
 In this section, we'll walk you through the output of the `LDAPSentinel` script step by step, demonstrating how it identifies suspicious LDAP queries. For this demonstration, we’ll use a sample LDAP traffic capture file.
 
