@@ -59,7 +59,7 @@ This project is tailored for users running Zeek versions **below 6.1**, as these
 2. **Clone Repository**
    
    ```bash
-   git clone https://github.com/yourusername/LDAPSentinel.git
+   git clone https://github.com/AliAtashGar7/LDAPSentinel.git
    mkdir /opt/zeek/share/zeek/site/LDAPSentinel
    cd LDAPSentinel/scripts
    cp -r . /opt/zeek/share/zeek/site/LDAPSentinel
