@@ -65,7 +65,7 @@ This project is tailored for users running Zeek versions **below 6.1**, as these
    Add the following to your `local.zeek` configuration file:
    
    ```zeek
-   @load LDAPDetection
+   @load LDAPSentinel
    ```
 
 4. **Deploy the Configuration**
