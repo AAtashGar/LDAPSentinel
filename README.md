@@ -1,7 +1,5 @@
 # LDAPSentinel
 
-# 
-
 ## Repository Structure
 
 ```
@@ -9,8 +7,6 @@ LDAPSentinel/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   └── bug_report.md
-│   └── workflows/
-│       └── ci.yml
 ├── LICENSE
 ├── README.md
 ├── CONTRIBUTING.md
