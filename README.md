@@ -1,6 +1,6 @@
 # LDAPSentinel
 
-# LDAPSentinel Repository Structure and README
+# 
 
 ## Repository Structure
 
