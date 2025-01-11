@@ -93,7 +93,7 @@ To simulate an LDAP attack, you can use the sample LDAP traffic file included in
 Once you've installed and deployed the script, you can run Zeek to analyze the traffic. Here's an example command to run Zeek with your traffic:
 
 ```bash
-zeek -r tests/sample_ldap_traffic.pcap
+ zeek -C -r tests/sample_ldap_traffic.pcap /opt/zeek/share/zeek/site/LDAPSentinel/main.zeek "LogAscii::use_json=T"
 ```
 
 ##### 3. **Output Example**
