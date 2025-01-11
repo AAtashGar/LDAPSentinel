@@ -2,11 +2,13 @@
 
 ## Repository Structure
 
-```
+```plaintext
 LDAPSentinel/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   └── bug_report.md
+|   |   └── feature_request.md
+|── image/POC.png
 ├── LICENSE
 ├── README.md
 ├── CONTRIBUTING.md
@@ -71,6 +73,50 @@ This project is tailored for users running Zeek versions **below 6.1**, as these
    ```bash
    zeekctl deploy
    ```
+
+## Proof of Concept (PoC)
+
+![alt text](C:\Users\Snapp\Desktop\Github\LDAPSentinel\image\Screenshot%202025-01-11%20052728.png)
+
+In this section, we'll walk you through the output of the `LDAPSentinel` script step by step, demonstrating how it identifies suspicious LDAP queries. For this demonstration, we’ll use a sample LDAP traffic capture file.
+
+### 1. **Sample Traffic**
+
+To simulate an LDAP attack, you can use the sample LDAP traffic file included in the repository: `tests/sample_ldap_traffic.pcap`. This file contains example traffic that will be analyzed by `LDAPSentinel`.
+
+### 2. **Running the Script**
+
+Once you've installed and deployed the script, you can run Zeek to analyze the traffic. Here's an example command to run Zeek with your traffic:
+
+```bash
+zeek -r tests/sample_ldap_traffic.pcap
+```
+
+##### 3. **Output Example**
+
+After processing the traffic, Zeek will produce logs with detailed information. The logs will include LDAP query patterns, any suspicious activity detected by the script, and more. Below is an example of what the output might look like:
+
+```plaintext
+# Example Output: Suspicious LDAP Query Detected
+2025-01-11T03:56:15-03:00  ldap_query   suspicious_ldap_query    192.168.1.100    dc=example,dc=com  "(&(objectClass=user)(userPassword=*))"
+
+```
+
+### 4. **Explaining the Output**
+
+- **Timestamp**: The time the query was logged.
+- **Event Type**: This shows that the event is an `ldap_query`.
+- **Detection**: The specific query that was flagged as suspicious, in this case, one that searches for `userPassword`, a common indicator of an attack.
+- **Source IP**: The IP address of the machine making the query.
+- **LDAP Query**: The actual LDAP query that was flagged.
+
+### 5. **What to Look For**
+
+The key indicator in this output is the LDAP query itself. The query `(&(objectClass=user)(userPassword=*))` is an example of a query that searches for user passwords, which is typically a suspicious action. The script flags queries that match patterns like this, helping security teams identify potential LDAP-based attacks.
+
+By following these steps, you can use `LDAPSentinel` to monitor LDAP traffic in your network and quickly spot suspicious activity.
+
+
 
 ## Contributing
 
