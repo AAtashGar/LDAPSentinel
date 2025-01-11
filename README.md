@@ -76,12 +76,6 @@ This project is tailored for users running Zeek versions **below 6.1**, as these
    zeekctl deploy
    ```
 
-## Usage
-
-Once deployed, the script will analyze LDAP traffic and identify queries matching the suspicious filter set. Logs will provide details of the source, destination, and detected queries.
-
-For more usage details, refer to the [usage documentation](docs/usage.md).
-
 ## Contributing
 
 We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
