@@ -10,7 +10,7 @@ Please note that this project is governed by a [Code of Conduct](https://www.con
 
 ### Reporting Issues
 
-If you encounter any problems or have suggestions for improvement, please create an issue in the [GitHub Issues](https://github.com/your-username/LDAPSentinel/issues) section. Include as much detail as possible:
+If you encounter any problems or have suggestions for improvement, please create an issue in the [GitHub Issues](https://github.com/AAtashGar/LDAPSentinel/issues) section. Include as much detail as possible:
 
 - Steps to reproduce the issue
 - Expected behavior
