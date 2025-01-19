@@ -30,7 +30,7 @@ This project is designed for both users using Zeek versions **below 6.1** and us
 2. **Clone Repository**
    
    ```bash
-   git clone https://github.com/AliAtashGar7/LDAPSentinel.git
+   git clone https://github.com/AAtashGar/LDAPSentinel.git
    cd LDAPSentinel/scripts/zeek6.1
    cp -r . "PATH TO ZEEK"/zeek/share/zeek/site/
    ```
@@ -53,7 +53,7 @@ This project is designed for both users using Zeek versions **below 6.1** and us
 1.   **Clone Repository**
 
 ```bash
-git clone https://github.com/AliAtashGar7/LDAPSentinel.git
+git clone https://github.com/AAtashGar/LDAPSentinel.git
 cd LDAPSentinel/scripts/zeek7.1
 cp -r . "PATH TO ZEEK"/zeek/share/zeek/site/
 ```
