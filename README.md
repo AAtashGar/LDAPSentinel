@@ -100,8 +100,7 @@ Suspicious LDAP query detected: (&(&(objectCategory=person)(!(userAccountControl
 ### 4. **What to Look For**
 
 The key indicator in this output is the LDAP query itself. The query `(&(&(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))(servicePrincipalName=*))` is an example of a query that searches for all enabled user accounts that have a servicePrincipalName attribute set.
-(https://www.dannymoran.com/ldap-cheat-sheet/)
-
+"https://www.dannymoran.com/ldap-cheat-sheet/"
 which is typically a suspicious action and may be used for attacks like kerberoasting. The script flags queries that match patterns like this, helping security teams identify potential LDAP-based attacks.
 
 By following these steps, you can use `LDAPSentinel` to monitor LDAP traffic in your network and quickly spot suspicious activity.
