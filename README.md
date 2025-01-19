@@ -1,6 +1,8 @@
 # LDAPSentinel
 
-![LDAPSentinel](https://github.com/user-attachments/assets/e151836a-b608-44cc-8a98-16bb4309dd2f)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e151836a-b608-44cc-8a98-16bb4309dd2f" alt="LDAPSentinel">
+</p>
 
 
 ## README
