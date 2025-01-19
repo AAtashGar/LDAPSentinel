@@ -1,6 +1,6 @@
 # LDAPSentinel
 
-[![LDAPSentinel]([URL_to_image](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png) "LDAPSentinel")][(URL_to_link)](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC)
+[![LDAPSentinel]([https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png] "LDAPSentinel")][(https://github.com/AAtashGar/LDAPSentinel/tree/main/POC)]
 
 ## README
 
