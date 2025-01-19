@@ -1,8 +1,6 @@
 # LDAPSentinel
 
-
-
-![LDAPSentinel](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png "Optional Title")
+![alt text](URL_to_image "Optional Title")
 
 ## README
 
