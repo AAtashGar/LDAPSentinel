@@ -1,8 +1,6 @@
 # LDAPSentinel
 
-
-
-[![alt text](URL_to_GIF)](URL_to_link)
+[<img src="file:///C:/Users/Snapp/Desktop/LDAPSentinel/POC/LDAPSentinel.png" title="" alt="alt text" data-align="center">](URL_to_link)
 
 ## README
 
@@ -71,9 +69,7 @@ cp -r . "PATH TO ZEEK"/zeek/share/zeek/site/
 
 ## Proof of Concept (PoC)
 
-
-
-[![alt text](URL_to_GIF)](URL_to_link)
+[![alt text](C:\Users\Snapp\Desktop\LDAPSentinel\POC\POC.gif)](URL_to_link)
 
 In this section, we'll walk you through the output of the `LDAPSentinel` script step by step, demonstrating how it identifies suspicious LDAP queries. For this demonstration, we’ll use a sample LDAP traffic capture file.
 
@@ -86,11 +82,7 @@ To simulate an LDAP attack, you can use the sample LDAP traffic file included in
 Once you've installed and deployed the script, you can run Zeek to analyze the traffic. Here's an example command to run Zeek with your traffic:
 
 ```bash
-<<<<<<< HEAD
  zeek -C -r tests/sample_ldap_traffic.pcap /opt/zeek/share/zeek/site/LDAPSentinel/main.zeek "LogAscii::use_json=T"
-=======
-zeek -C -r tests/sample_ldap_traffic.pcap "PATH TO zeek"/zeek/share/zeek/site/LDAPSentinel "LogAscii::use_json=T"
->>>>>>> 8cc4c9e (Initial commit)
 ```
 
 ##### 3. **Output Example**
