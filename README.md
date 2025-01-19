@@ -2,7 +2,7 @@
 
 
 
-[![alt text](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png)](URL_to_link)
+![LDAPSentinel](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png "Optional Title")
 
 ## README
 
@@ -71,8 +71,6 @@ cp -r . "PATH TO ZEEK"/zeek/share/zeek/site/
 
 ## Proof of Concept (PoC)
 
-
-
 [![alt text](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/POC.gif)](URL_to_link)
 
 In this section, we'll walk you through the output of the `LDAPSentinel` script step by step, demonstrating how it identifies suspicious LDAP queries. For this demonstration, we’ll use a sample LDAP traffic capture file.
@@ -86,11 +84,7 @@ To simulate an LDAP attack, you can use the sample LDAP traffic file included in
 Once you've installed and deployed the script, you can run Zeek to analyze the traffic. Here's an example command to run Zeek with your traffic:
 
 ```bash
-<<<<<<< HEAD
  zeek -C -r tests/sample_ldap_traffic.pcap /opt/zeek/share/zeek/site/LDAPSentinel/main.zeek "LogAscii::use_json=T"
-=======
-zeek -C -r tests/sample_ldap_traffic.pcap "PATH TO zeek"/zeek/share/zeek/site/LDAPSentinel "LogAscii::use_json=T"
->>>>>>> 8cc4c9e (Initial commit)
 ```
 
 ##### 3. **Output Example**
@@ -104,7 +98,8 @@ Suspicious LDAP query detected: (&(&(objectCategory=person)(!(userAccountControl
 
 ### 4. **What to Look For**
 
-The key indicator in this output is the LDAP query itself. The query `(&(&(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))(servicePrincipalName=*))` is an example of a query that searches for all enabled user accounts that have a servicePrincipalName attribute set https://www.dannymoran.com/ldap-cheat-sheet/, 
+The key indicator in this output is the LDAP query itself. The query `(&(&(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))(servicePrincipalName=*))` is an example of a query that searches for all enabled user accounts that have a servicePrincipalName attribute set.
+https://www.dannymoran.com/ldap-cheat-sheet/
 
 which is typically a suspicious action and may be used for attacks like kerberoasting. The script flags queries that match patterns like this, helping security teams identify potential LDAP-based attacks.
 
