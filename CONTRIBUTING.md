@@ -22,28 +22,35 @@ If you encounter any problems or have suggestions for improvement, please create
 We welcome code contributions, whether it’s fixing bugs, adding features, or improving existing functionality. To contribute code:
 
 1. **Fork the repository**: Click the "Fork" button on the repository page to create your own copy.
+
 2. **Clone your fork**: Use `git clone` to clone your fork to your local machine.
    
    ```bash
    git clone https://github.com/your-username/LDAPSentinel.git
    ```
+
 3. **Create a new branch**: Create a branch for your changes.
    
    ```bash
    git checkout -b feature-or-bugfix-description
    ```
+
 4. **Make your changes**: Modify the code or documentation as needed.
+
 5. **Run tests**: Ensure your changes pass all existing tests and add new ones if necessary.
+
 6. **Commit your changes**: Write a clear and descriptive commit message.
    
    ```bash
    git commit -m "Brief description of your changes"
    ```
+
 7. **Push your branch**: Push your branch to your forked repository.
    
    ```bash
    git push origin feature-or-bugfix-description
    ```
+
 8. **Submit a pull request**: Go to the original repository and create a pull request. Describe your changes in detail and link to any relevant issues.
 
 ### Setting Up the Environment
@@ -60,11 +67,13 @@ To set up the development environment for **LDAPSentinel**:
 Tests are located in the `tests/` directory. To run the tests:
 
 1. Use the provided `.pcap` files to simulate LDAP traffic.
+
 2. Run Zeek with the test configuration:
    
    ```bash
-   zeek -r tests/sample_ldap_traffic.pcap scripts/__load__.zeek
+   zeek -C -r tests/sample_ldap_traffic.pcap "PATH TO zeek"/zeek/share/zeek/site/LDAPSentinel "LogAscii::use_json=T"
    ```
+
 3. Verify the output matches expected results in the `tests/basic.test` file.
 
 ### Submitting Contributions
