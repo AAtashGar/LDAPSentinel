@@ -1,7 +1,4 @@
 # LDAPSentinel
-![Alt Text](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png)
-
-[<img src="https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png" title="" alt="alt text" data-align="center">]
 
 ## README
 
@@ -69,8 +66,6 @@ cp -r . "PATH TO ZEEK"/zeek/share/zeek/site/
   ```
 
 ## Proof of Concept (PoC)
-
-[![alt text](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/POC.gif)](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/POC.gif)
 
 
 In this section, we'll walk you through the output of the `LDAPSentinel` script step by step, demonstrating how it identifies suspicious LDAP queries. For this demonstration, we’ll use a sample LDAP traffic capture file.
