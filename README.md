@@ -1,4 +1,5 @@
 # LDAPSentinel
+![Alt Text](https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png)
 
 [<img src="https://github.com/AAtashGar/LDAPSentinel/tree/main/POC/LDAPSentinel.png" title="" alt="alt text" data-align="center">]
 
